@@ -2,7 +2,7 @@
 
 # Overview
 
-The project focuses on designing and implementing a database system to automate the services of a university library, specifically managing books, student borrowing, and resource tracking. This submission includes the SQL implementation and the Conceptual Data Model (CDM), as required by the project specifications. The database was implemented using **MySQL**
+The project focuses on designing and implementing a database system to automate the services of a university library, specifically managing books, student borrowing, and resource tracking. This submission includes the SQL implementation and the Conceptual Data Model (CDM), as required by the project specifications. The database was implemented using MySQL.
 
 ## Project Description
 
@@ -12,7 +12,7 @@ The goal of this project is to design a database system to automate the manageme
 
 ### Database Design
 
-- **Conceptual Data Model (CDM)**: Designed as an entity-association diagram using crow's foot notation in [draw.io](draw.io). The CDM includes entities such as Student, Card, Book, Copy, and Loan, with relationships and constraints detailed in  [Assumptions and Constraints.md](results/Assumptions and Constraints.md) .
+- **Conceptual Data Model (CDM)**: Designed as an entity-association diagram using crow's foot notation in [draw.io](draw.io). The CDM includes entities such as Student, Card, Book, Copy, and Loan, with relationships and constraints detailed in  [Assumptions and Constraints.md](https://github.com/jachinrao/library-management-system/blob/main/results/Assumptions%20and%20Constraints.md) .
 
   [![CDM Diagram](results/cdm.png)](https://github.com/zhexinrao/library-management-system/blob/main/results/cdm.png)
 
@@ -22,9 +22,9 @@ The goal of this project is to design a database system to automate the manageme
   - Checks (e.g., phone number format, positive page counts).
   - Triggers to enforce business rules (e.g., loan limits, card status, due dates).
 
-- **Database Implementation**: Implemented in MySQL with the [script]('/Users/zhexinrao/Documents/GitHub/library-management-system/src/Tables, Triggers and Queries.sql'). The script includes:
+- **Database Implementation**: Implemented in MySQL with the [script](https://github.com/jachinrao/library-management-system/tree/main/src). The script includes:
 
-  - Table creation for Student, Card, Book, Copy, and Loan.
+  - Table creation for `Student`, `Card, Book`, `Copy`, and `Loan`.
   - Triggers to set default dates, enforce loan limits (5 for registered students, 1 for non-registered), prevent double borrowing, and check card status.
   - Sample data population for testing.
   - Queries to retrieve borrowing information and overdue copies
