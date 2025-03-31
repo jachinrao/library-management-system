@@ -12,7 +12,7 @@ The goal of this project is to design a database system to automate the manageme
 
 ### Database Design
 
-- **Conceptual Data Model (CDM)**: Designed as an entity-association diagram using crow's foot notation in draw.io. The CDM includes entities such as Student, Card, Book, Copy, and Loan, with relationships and constraints detailed in the document.
+- **Conceptual Data Model (CDM)**: Designed as an entity-association diagram using crow's foot notation in [draw.io](draw.io). The CDM includes entities such as Student, Card, Book, Copy, and Loan, with relationships and constraints detailed in  [Assumptions and Constraints.md](results/Assumptions and Constraints.md) .
 
   [![CDM Diagram](results/cdm.png)](https://github.com/zhexinrao/library-management-system/blob/main/results/cdm.png)
 
@@ -22,7 +22,7 @@ The goal of this project is to design a database system to automate the manageme
   - Checks (e.g., phone number format, positive page counts).
   - Triggers to enforce business rules (e.g., loan limits, card status, due dates).
 
-- **Database Implementation**: Implemented in MySQL. The script includes:
+- **Database Implementation**: Implemented in MySQL with the [script]('/Users/zhexinrao/Documents/GitHub/library-management-system/src/Tables, Triggers and Queries.sql'). The script includes:
 
   - Table creation for Student, Card, Book, Copy, and Loan.
   - Triggers to set default dates, enforce loan limits (5 for registered students, 1 for non-registered), prevent double borrowing, and check card status.
